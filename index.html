@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Portfolio of Cyprian Christopher – Data Analyst skilled in Excel, Power BI, SQL, and Python. Showcasing interactive dashboards and data projects.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyprian Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #0f172a;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 5px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .skill-tag {
+      background: #e2e8f0;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;}
+  }
+  .skills {
+    justify-content: center;
+  }
+  .slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slides img {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(15, 23, 42, 0.7);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.call-button {
+  display: inline-block;
+  background-color: #235284;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+.project {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.call-button:hover {
+  background-color: #2563eb;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cyprian Christopher</h1>
+    <p>Data Analyst | Excel | Power BI | SQL | Python |  HTML | CSS | Java Script </p>
+    <img src="your-photo.jpg" alt="Your Photo">
+  </header>
+
+  <section class="fade-in">
+    <h2>About Me</h2>
+    <p>I'm a data analyst passionate about transforming data into compelling stories. I specialize in creating intuitive dashboards and delivering actionable insights using tools like Excel, Power BI, and Python. In addition to my analytical expertise, I have hands-on experience with HTML, CSS, and JavaScript—skills that allow me to design and build interactive data-driven web applications and dashboards.
+
+This portfolio is a showcase of my projects, where data meets design to drive smarter decisions.
+</p>
+  </section>
+
+  <section class="fade-in">
+    <h2>Projects</h2>
+
+    <div class="project">
+  <h3>📊 Power BI Sales Dashboard</h3>
+  <p>An interactive dashboard analyzing product sales, trends, and customer segmentation using DAX and visuals.</p>
+  <div class="slider">
+    <div class="slides">
+      <img src="dashboard1a.jpg" alt="Sales Dashboard 1">
+      <img src="dashboard1b.jpg" alt="Sales Dashboard 2">
+      <img src="dashboard1c.jpg" alt="Sales Dashboard 3">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+
+   <div class="project">
+      <h3>📈 Churn Analysis (Excel + SQL)</h3>
+      <p>Used SQL to extract customer data and Excel to calculate churn metrics and visualize customer lifetime value.</p>
+   <div class="slider">
+     <div class="slides">
+      <img src="dashboard1c.jpg" alt="Sales Dashboard 1">
+      <img src="dashboard1a.jpg" alt="Sales Dashboard 2">
+      <img src="dashboard1b.jpg" alt="Sales Dashboard 3">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+    <div class="project">
+      <h3>📦 Python Data Analysis: E-commerce</h3>
+      <p>Data cleaned and analyzed with Pandas. Visualizations done using Seaborn and Matplotlib to uncover trends.</p>
+   <div class="slider">
+    <div class="slides">
+      <img src="dashboard1b.jpg" alt="Sales Dashboard 1">
+      <img src="dashboard1c.jpg" alt="Sales Dashboard 2">
+      <img src="dashboard1a.jpg" alt="Sales Dashboard 3">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-tag">Excel</div>
+      <div class="skill-tag">Power BI</div>
+      <div class="skill-tag">SQL</div>
+      <div class="skill-tag">Python</div>
+      <div class="skill-tag">Data Cleaning</div>
+      <div class="skill-tag">Dashboard Design</div>
+      <div class="skill-tag">HTML</div>
+      <div class="skill-tag">CSS</div>
+      <div class="skill-tag">Java script</div>
+    </div>
+  </section>
+  <section class="fade-in">
+  <h2>Certificates</h2>
+
+  <div class="project">
+    <h3>🎓 Diploma in Microsoft Excel</h3>
+    <p>Issued by Alison | July 2023</p>
+
+    <a href="https://alison.com/certification/check/$2y$10$kF7EcuHjVNhGVnGDhHw35eos2mulQkbf9SyyZKjqaYbQrs6suba" target="_blank" class="call-button">View Certificate</a>
+  </div>
+    <div class="project">
+    <h3>🎓 Diploma in Microsoft Power BI</h3>
+    <p>Issued by Alison | August 2023</p>
+
+    <a href="https://alison.com/certification/check/$2y$10$ASWFVhcanmzZEhqyQpn4eOxVjqAgEgiZfnMZVVC5EgiSrThNfQTeG" target="_blank" class="call-button">View Certificate</a>
+  </div>
+
+  <div class="project">
+    <h3>🎓 Fundamentals of Digital Marketing - Google Digital Garage</h3>
+    <p>Issued by Google | December 2020</p>
+   
+  </div>
+</section>
+
+  <section class="fade-in">
+
+<p><strong><a href="mailto:ccyprian952@gmail.com"class="call-button">Send a Message</a></strong></p>
+<p><a href="https://www.linkedin.com/in/cyprian-christopher-1549a1113?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="call-button">View Linkedin </a></p>
+<p><a href="tel:+2348135341447" class="call-button">Call Me</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cyprian. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fadeEl => {
+      appearOnScroll.observe(fadeEl);
+    });
+    
+  </script>
+  <script>
+  document.querySelectorAll('.slider').forEach(slider => {
+    const slides = slider.querySelector('.slides');
+    const images = slides.querySelectorAll('img');
+    const prevBtn = slider.querySelector('.prev');
+    const nextBtn = slider.querySelector('.next');
+    let index = 0;
+
+    const showSlide = (i) => {
+      index = (i + images.length) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    prevBtn.addEventListener('click', () => {
+      showSlide(index - 1);
+      resetAutoplay();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      showSlide(index + 1);
+      resetAutoplay();
+    });
+
+    // Autoplay
+    let autoPlayInterval = setInterval(() => {
+      showSlide(index + 1);
+    }, 4000); // 4 seconds
+
+    const resetAutoplay = () => {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(() => {
+        showSlide(index + 1);
+      }, 4000);
+    };
+  });
+</script>
+
+</body>
+</html>
